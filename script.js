@@ -1,9 +1,9 @@
-let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+//let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
 let editingIndex = null; 
 
-function updateLocalStorage() {
-    localStorage.setItem('transactions', JSON.stringify(transactions));
-}
+//function updateLocalStorage() {
+  //  localStorage.setItem('transactions', JSON.stringify(transactions));
+//}
 
 function renderTransactions(transactionsToRender = transactions) {
     const transactionList = document.getElementById('transaction-list');
@@ -50,14 +50,14 @@ function addTransaction(e) {
         transactions.push({ description, amount, type, date });
     }
 
-    updateLocalStorage();
+    //updateLocalStorage();
     renderTransactions();
     document.getElementById('transaction-form').reset(); 
 }
 
 function deleteTransaction(index) {
     transactions.splice(index, 1);
-    updateLocalStorage();
+   // updateLocalStorage();
     renderTransactions();
 }
 
