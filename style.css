@@ -67,19 +67,19 @@ form button:hover {
     margin-right: 10px;
 }
 
-#transaction-table {
+.transaction-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-#transaction-table th, #transaction-table td {
+.transaction-table th, .transaction-table td {
     border: 1px solid #ced4da;
     padding: 10px;
     text-align: left;
 }
 
-#transaction-table th {
+.transaction-table th {
     background-color: #007bff;
     color: white;
 }
