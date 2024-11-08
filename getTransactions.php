@@ -2,7 +2,7 @@
 #selecting transactionss
 include "connection.php";
 
-$id = $_GET["id"] ?? null;
+$id = $_GET["id"] ?? null; //using get so we can pass id in the url while selection users using post so the id can be in the body
 
 if ($id) {
     $query = "SELECT * FROM transactions WHERE id = $id";
